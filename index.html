@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SCalc</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>SCalc</h1>
+  </header>
+
+  <main>
+    <section id="budzet-section">
+      <h2>Budżet</h2>
+      <p>Posiadany budżet: <span id="budzet-display">0</span> zł</p>
+      <input type="number" id="budzet-input" placeholder="Dodaj kwotę">
+      <button onclick="dodajBudzet()">Dodaj do budżetu</button>
+    </section>
+
+    <section id="stan-section">
+      <h2>Stan skuna</h2>
+      <p>Masz na stanie: <span id="stan-display">0</span> g</p>
+    </section>
+
+    <section id="sort-section">
+      <h2>Sort (Kupowanie)</h2>
+      <input type="number" id="sort-cena-gram" placeholder="Cena za gram">
+      <input type="number" id="sort-ilosc-gram" placeholder="Ilość gramów">
+      <button onclick="kupSort()">Kup sort</button>
+    </section>
+
+    <section id="rzuc-section">
+      <h2>Rzuć skuna</h2>
+      <input type="text" id="rzuc-imie" placeholder="Imię osoby" required>
+      <input type="number" id="rzuc-ilosc-gram" placeholder="Ilość gramów">
+      <input type="number" id="rzuc-cena-gram" placeholder="Cena za gram">
+      <input type="date" id="rzuc-data-splaty">
+      <button onclick="rzucSkun()">Rzuć skuna</button>
+    </section>
+
+    <section id="dlugi-section">
+      <h2>Długi</h2>
+      <div id="dlugi-lista"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
