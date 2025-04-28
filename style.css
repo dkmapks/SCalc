@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+header {
+  background-color: #1f1f1f;
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input, button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  background: #333;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+button {
+  background: #6200ea;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #3700b3;
+}
+
+#dlugi-lista > div {
+  background: #2a2a2a;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
